@@ -23,6 +23,6 @@ jobs:
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.12.12
         with:
-          heroku_api_key: ${{a6895380-2077-4dbd-9d57-f6a366e61353}}
+          heroku_api_key: ${{secrets.HEROKU_API}}
           heroku_app_name: "learn2deploy"
           heroku_email: "yeliu0123@gmail.com"
