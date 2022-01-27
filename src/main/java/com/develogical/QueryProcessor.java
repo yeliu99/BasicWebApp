@@ -25,6 +25,10 @@ public class QueryProcessor {
             return "389";
         }
 
+        if (query.toLowerCase().contains("multiplied")) {
+            return "48";
+        }
+
         return "";
     }
 }

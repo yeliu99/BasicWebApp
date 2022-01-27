@@ -45,6 +45,12 @@ public class QueryProcessorTest {
     }
 
     @Test
+    public void knowsAboutMultiplied() throws Exception {
+        assertThat(queryProcessor.process("multiplied"),
+                containsString("38"));
+    }
+
+    @Test
     public void isNotCaseSensitive() throws Exception {
         assertThat(queryProcessor.process("shakespeare"), containsString("playwright"));
     }
