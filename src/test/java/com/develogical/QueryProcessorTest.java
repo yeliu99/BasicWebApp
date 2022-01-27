@@ -47,7 +47,7 @@ public class QueryProcessorTest {
     @Test
     public void knowsAboutMultiplied() throws Exception {
         assertThat(queryProcessor.process("multiplied"),
-                containsString("38"));
+                containsString("48"));
     }
 
     @Test
