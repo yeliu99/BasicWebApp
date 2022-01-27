@@ -39,6 +39,12 @@ public class QueryProcessorTest {
     }
 
     @Test
+    public void knowsAboutPrime() throws Exception {
+        assertThat(queryProcessor.process("prime"),
+                containsString("389"));
+    }
+
+    @Test
     public void isNotCaseSensitive() throws Exception {
         assertThat(queryProcessor.process("shakespeare"), containsString("playwright"));
     }

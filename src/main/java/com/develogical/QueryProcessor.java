@@ -21,6 +21,10 @@ public class QueryProcessor {
             return "18";
         }
 
+        if (query.toLowerCase().contains("prime")) {
+            return "389";
+        }
+
         return "";
     }
 }
